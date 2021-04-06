@@ -1,0 +1,94 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.App2" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.App2.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.App2.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.App2.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="DrawerIconStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/purple_500</item>
+    </style>
+
+    <style name="BaseMaterialAppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/white</item>
+
+    </style>
+
+    <style name="MaterialAppTheme" parent="BaseMaterialAppTheme" />
+
+    <style name="MaterialAppTheme.NoActionBar" parent="MaterialAppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MaterialAppTheme.NoActionBar.FullScreen" parent="MaterialAppTheme.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="BaseAppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar.Bridge">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="AppTheme" parent="BaseAppTheme" />
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="drawerArrowStyle">@style/DrawerIconStyle</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.FullScreen" parent="AppTheme.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="drawerArrowStyle">@style/DrawerIconStyle</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="appFont" parent="@android:style/TextAppearance.Medium">
+        <!--<item name="android:fontFamily">@font/aller</item>-->
+    </style>
+
+    <style name="header" parent="appFont">
+        <item name="android:textSize">26dp</item>
+        <!--<item name="android:textColor">@color/font_1</item>-->
+    </style>
+
+    <style name="blackChkbox">
+        <item name="colorAccent">#616161</item>
+        <item name="android:textColorSecondary">#616161</item>
+    </style>
+
+    <style name="hintText" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">@color/purple_700</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <TextView
+        android:id="@+id/label_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Details"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/label_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Name:"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="@+id/label_details"
+        app:layout_constraintTop_toBottomOf="@+id/label_details" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="150dp"
+        android:textSize="17dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/label_name"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/label_city"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="City :"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="@+id/label_name"
+        app:layout_constraintTop_toBottomOf="@+id/label_name" />
+
+    <TextView
+        android:id="@+id/text_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/label_city"
+        app:layout_constraintStart_toStartOf="@id/text_name" />
+
+    <TextView
+        android:id="@+id/label_BOD"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="BOD:"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="@+id/label_city"
+        app:layout_constraintTop_toBottomOf="@+id/label_city" />
+
+    <TextView
+        android:id="@+id/text_bod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:textSize="17dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/label_BOD"
+        app:layout_constraintStart_toStartOf="@id/text_city" />
+
+    <TextView
+        android:id="@+id/label_gender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Gender :"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="@+id/label_BOD"
+        app:layout_constraintTop_toBottomOf="@+id/label_BOD" />
+
+    <TextView
+        android:id="@+id/text_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/label_gender"
+        app:layout_constraintStart_toStartOf="@id/text_bod" />
+
+    <TextView
+        android:id="@+id/label_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Email:"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="@+id/label_gender"
+        app:layout_constraintTop_toBottomOf="@+id/label_gender" />
+
+    <TextView
+        android:id="@+id/text_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/label_email"
+        app:layout_constraintStart_toStartOf="@id/text_gender" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
